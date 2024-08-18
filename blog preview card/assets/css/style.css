@@ -1,0 +1,95 @@
+
+body{
+    background-color:#f4d04e ;
+    width: 1440px;
+    height: 960px;
+    
+}
+@font-face {
+    font-family: figtree;
+    src: url(../fonts/Figtree/Figtree-VariableFont_wght.ttf);
+}
+.container{
+    margin:219px;
+    width: 384px;
+    height: 522px;
+    border-radius:20px ;
+    background-color:#ffffff ;
+    border-top:1px solid  #111111;
+    border-left: 1px solid #111111;
+    border-bottom: 10px solid #111111;
+    border-right: 10px solid #111111 ;
+    
+}
+label{
+    font-family: figtree;
+    font-size: 14px;
+    font-weight: 800;
+   width: 82px;
+   height: 29px;
+   background-color: #f4d04e; 
+   border-radius: 4px;
+   margin-top: 24px;
+   margin-left: 24px;
+   padding-top: 4px;
+   padding-right: 12px;
+   padding-bottom: 4px;
+   padding-left: 12px;
+   text-align: center;
+
+}
+h4{
+    font-family: figtree;
+    font-size:14px ;
+    font-weight: 800;
+    line-height: 21px;
+    padding-left: 24px;
+   
+}
+h1{
+   font-family: figtree;
+   font-weight: 800;
+   font-size: 24px;
+   color: #111111;
+   padding-left: 24px;
+}
+p{
+    font-family: figtree;
+    font-weight:500 ;
+    font-size: 16;
+    line-height: 24px;
+    color:#6b6b6b ;
+    padding-left: 24px;
+}
+.userpic{
+   
+    display: flex;
+    flex-direction: row;
+    justify-content:left;
+    font-family: figtree;
+    font-size: 14px;
+    font-weight: 800;
+    color:#111111 ;
+    margin-left: 24px;
+    gap:12px;
+    padding-bottom: 29.5px;   
+}
+.userpic img{
+    border-radius: 50%;
+    object-fit: cover;   
+}
+span{
+    padding-bottom: 29.5px;
+    padding-top: 10px;
+    
+}
+.blog_pic{
+    padding-left: 24px;
+    padding-top: 24px;
+    padding-right: 24px;
+    padding-bottom:24px ;
+}
+@media (max-width:480px){
+
+}
+ 
