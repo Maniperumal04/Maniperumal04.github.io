@@ -1,0 +1,53 @@
+body{
+    width:1440px;
+    height: 960px;
+    background-color: #DBDBDB;
+    margin:auto;
+
+    
+   
+}
+.container{
+    width: 320px;
+    height: 499px;
+    background-color:  #FFFFFF;
+    padding:16px 16px 16px 16px;
+    border-radius: 20px 20px 20px 20px;
+    margin: auto;
+}
+@font-face {
+    font-family: outfit;
+    src: url(../fonts/Outfit-VariableFont_wght.ttf);
+}
+h1{
+    width: 256px;
+    height: 52px;
+    font-family: outfit;
+    line-height: 26.4px;
+    color: #1f314f;
+    font-size: 22px;
+    line-height: 26.4px;
+    font-weight: 700;
+    text-align: center;
+    padding-left: 32px;
+}
+p{
+    font-family: outfit;
+    line-height: 21px;
+    color: #68778d;
+    width: 256px;
+    height: 63px;
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: 0.2px;
+    padding-left: 32px;
+    
+}
+img{
+    width: 288px;
+height: 288px;
+padding: 16px;
+border-radius: 10px 0px 0px 0px;
+
+
+}
