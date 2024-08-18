@@ -1,0 +1,188 @@
+:root{
+  color: var(#004140,#006971,#e28625,#f2f2f2,#ffffff);
+}
+
+body {
+  width: 1440px;
+  height: 800px;
+  top: 1114px;
+  left: 2405px;
+  background-color: #f2f2f2;
+  color: #f2f2f2;
+  text-align: left;
+  margin: auto;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 150px;
+}
+
+.card-one {
+  width: 307px;
+  height: 500px;
+  top: 171px;
+  left: 567px;
+  gap: 0px;
+  border-radius: 8px 0px 0px 8px;
+  opacity: 0px;
+  background: #e28625;
+  padding: 48px 47.5px;
+}
+.btn-one {
+  border-radius: 99px;
+  border-color: hsl(31, 77%, 52%);
+  color: #e28625;
+  cursor: pointer;
+}
+.btn-one:hover {
+  background-color: #e28625;
+  border: 2px solid #ffffff;
+  color: #f2f2f2;
+}
+
+.card-one img {
+  width: 63.91px;
+  height: 40px;
+  top: 219px;
+  left: 308px;
+}
+
+.card-two {
+  width: 307px;
+  height: 500px;
+  top: 171px;
+  left: 567px;
+  gap: 0px;
+  opacity: 0px;
+  background: #006971;
+  padding: 48px 47.5px;
+}
+.btn-two {
+  border-radius: 99px;
+  background: #f2f2f2;
+  color: #006971;
+  cursor: pointer;
+}
+.btn-two:hover {
+  background-color: #006971;
+
+  border: 2px solid #ffffff;
+  color: #ffffff;
+}
+.card-two img {
+  width: 63.91px;
+  height: 40px;
+  top: 219px;
+  left: 308px;
+}
+
+.card-three {
+  width: 307px;
+  height: 500px;
+  top: 171px;
+  left: 873px;
+  gap: 0px;
+  border-radius: 0px 8px 8px 0px;
+  opacity: 0px;
+  background: #004140;
+  padding: 48px 47.5px;
+}
+.card-three h2 {
+  width: 98px;
+  width: 48px;
+}
+.btn-three {
+  border-radius: 99px;
+  background: #f2f2f2;
+  color: #004140;
+  cursor: pointer;
+}
+.btn-three:hover {
+  background-color: #004140;
+  color: #ffffff;
+}
+.card-three img {
+  width: 63.91px;
+  height: 40px;
+  top: 219px;
+  left: 308px;
+}
+button {
+  border-color: #ffffff;
+  border-radius: 25px;
+  width: 146px;
+  border: 2px solid #fff;
+  /* border: 2px 0px 0px 0px; */
+  position: relative;
+  height: 48px;
+  margin-top: 83px;
+}
+
+@font-face {
+  font-family: Big Shoulders Display;
+  src: url(../fonts/Big_Shoulders_Display/BigShouldersDisplay-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: Lexend Deca;
+  src: url(../fonts/Lexend_Deca/LexendDeca-VariableFont_wght.ttf);
+}
+h2 {
+  font-family: Big Shoulders Display;
+  width: 68px;
+  height: 48px;
+  top: 294px;
+  left: 308px;
+  font-size: 40px;
+  font-weight: 700px;
+  line-height: 47.88px;
+  text-align: left;
+  color: #f2f2f2;
+}
+p {
+  font-family: Lexend Deca;
+  width: 212px;
+  height: 125px;
+  top: 367px;
+  left: 307.5px;
+  opacity: 75%;
+  font-size: 15px;
+  font-weight: 400px;
+  line-height: 25px;
+  text-align: left;
+  color: #ffffff;
+}
+img {
+  width: 64px;
+  height: 40px;
+  top: 219px;
+  left: 308px;
+}
+@media only screen and (max-width: 844px) {
+  body {
+    display: flex;
+    width: 100%;
+    overflow: scroll;
+    flex-wrap: wrap;
+  }
+
+  .container {
+    gap: 0;
+    padding: 0px 0;
+    flex-direction: column;
+  }
+
+  .card-one {
+    border-radius: 7px 7px 0 0;
+  }
+
+  .card-two {
+    border-radius: 0 0 0px 0px;
+  }
+
+  .card-three {
+    font-size: 0.77rem;
+    border-radius: 0 0 7px 7px;
+  }
+}
