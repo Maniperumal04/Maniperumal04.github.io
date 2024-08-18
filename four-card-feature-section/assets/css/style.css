@@ -1,0 +1,139 @@
+body {
+  width: auto;
+  height: auto;
+  background-color: #2e2e2e;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+
+}
+@font-face {
+  font-family: poppins;
+  src: url(../fonts/Poppins/Poppins-Regular.ttf);
+}
+h1 {
+  font-weight: 275;
+  font-size: 36px;
+  font-family: poppins;
+  letter-spacing: 0.25px;
+  text-align: center;
+  color: #f1f1f1;
+}
+h2 {
+  font-family: poppins;
+  font-weight: 600;
+  font-size: 35px;
+  letter-spacing: 0.25px;
+  text-align: center;
+  color: #f1f1f1;
+}
+h3 {
+ padding-left: 32px;
+  font-family: poppins;
+  font-size: 20px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+p {
+  font-family: poppins;
+  font-weight: 400;
+  font-size: 15px;
+  color: #f1f1f1;
+  letter-spacing: 0.1px;
+  text-align: center;
+  opacity: 50%;
+  margin: auto;
+}
+
+
+.heading {
+  text-align: center;
+  height: 50px;
+  width: 540px;
+  font-weight: 400;
+  opacity: 50%;
+}
+.container {
+  display: flex;
+  align-items: center;
+justify-content: center;
+margin-top: 64px;
+}
+.col1, .col2, .col3{
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.col2{
+  display: flex;
+  flex-direction: column;
+ }
+ .card-one, .card-two, .card-three, .card-four{
+  margin: 15px;
+ }
+.card-one {
+  width: 350px;
+  height: 250px;
+  border-top: 4px solid #44d3d2;
+  border-radius: 0 0 10px 10px;
+  background-color: #2c2c2c;
+  box-shadow: 0 0 4px 8px rgba(0, 0, 0, 0.1), 0 0 25px hsla(213, 47%, 67%, 0.5);
+}
+.card-two {
+  width: 350px;
+  height: 250px;
+  border-top: 4px solid #ea5454;
+  border-radius: 0 0 10px 10px;
+  background-color: #2c2c2c;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 0 25px hsla(0, 78%, 62%, 0.5);
+}
+.card-three {
+  width: 350px;
+  height: 250px;
+  border-top: 4px solid #fcae4a;
+  border-radius: 0 0 10px 10px;
+  background-color: #2c2c2c;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 0 25px hsla(34, 97%, 64%, 0.5);
+ 
+}
+.card-four {
+  width: 350px;
+  height: 250px;
+  border-top: 4px solid #549ef2;
+  border-radius: 0 0 10px 10px;
+  background-color: #2c2c2c;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 0 25px hsla(212, 86%, 64%, 0.5);
+}
+img {
+  width: 64px;
+  height: 64px;
+  float: right;
+  padding-right: 32px;
+  padding-top: 40px;
+  padding-bottom: 32px;
+}
+
+@media screen and (max-width: 1165px) {
+  .container {
+      flex-direction: column;
+      margin-top: 32px;
+  }
+
+  .col1, .col2, .col3 {
+      flex-direction: column;
+      margin: 0;
+  }
+
+  .col2 {
+      flex-direction: column;
+  }
+
+ 
+
+  h3 {
+      padding: 16px 16px 6px 16px;
+  }
+}
