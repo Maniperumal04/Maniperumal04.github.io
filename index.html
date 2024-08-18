@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Maniperumal - Portfolio</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <!-- Add your profile picture here -->
+            <img src="./assets/images/mypic.jpg" alt="Your Profile Picture" class="profile-picture">
+            <h1>MANIPERUMAL A</h1>
+            <p>Front-end developer</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#resume">Resume</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <div class="section-content">
+            <h2>About Me</h2>
+            <p>I'm MANIPERUMAL A, a front-end developer focused on crafting user-friendly digital experiences. With 2 months of experience in web technologies, I enjoy turning ideas into intuitive designs and responsive layout</p>
+        </div>
+    </section>
+
+    <section id="education">
+        <div class="section-content">
+            <h2> Bachelor of Computer Applications</h2>
+            <p>J.J College of Arts and Science,Pudukkottai.</p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="section-content">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JAVA SCRIPT</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="section-content">
+            <h2>Projects</h2>
+            <ul>
+                <li><a href="./three column preview page/three-card-column.html" target="_blank">Three-column preview card webpage</a></li>
+                <li><a href="./QR code/qr-code-component.html" target="_blank">QR-code-component</a></li>
+                <li><a href="./recipe page/recipe-page.html" target="_blank">recipe-page</a></li>
+                <li><a href="./blog preview card/blog-card.html" target="_blank">blog preview card</a></li>
+                <li><a href="./four-card-feature-section/four-card-feature-section.html" target="_blank">four-card-feature-section</a></li>
+                <!-- Add more project links here -->
+            </ul>
+        </div>
+    </section>
+
+    <section id="resume">
+        <center>
+        <div class="section-content">
+            <h2>Resume</h2>
+            <a href="https://drive.google.com/file/d/1QZCT64lLsUpfOTr7o0H3wdyN3QaDTApk/view?usp=sharing" class="download-button">Download CV</a>
+        </div>
+        </center>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 MANIPERUMAL A. All rights reserved</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling to section when clicking on navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
