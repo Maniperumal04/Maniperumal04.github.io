@@ -11,7 +11,7 @@
 body {
     font-family: 'Bai Jamjuree';
     text-align: center;
-    
+    margin: 0;
 }
 .banner{
     width: 100%;
@@ -229,7 +229,7 @@ footer {
     text-align: center;
     padding: 20px 0;
     margin-top: 50px;
-    display: inline;
+    /* display: inline; */
 }
 
 footer img {
@@ -256,7 +256,7 @@ footer nav a:hover {
     display: inline;
     padding-right: 10px;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
     .logo img {
         margin: 80px auto 0 auto;
         width: 100px;
