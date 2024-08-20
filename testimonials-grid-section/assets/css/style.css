@@ -1,8 +1,10 @@
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+
 body{
     background-color: hsl(210, 46%, 95%);
-    font-family: 'Barlow Semi Condensed';
+}
+@font-face {
+    font-family: Barlow_Semi_Condensed;
+    src: url(../fonts/Barlow_Semi_Condensed/BarlowSemiCondensed-Medium.ttf);
 }
 .daniel{
     height: 500px;
