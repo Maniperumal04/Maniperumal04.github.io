@@ -7,6 +7,7 @@ body{
     src: url(../fonts/Barlow_Semi_Condensed/BarlowSemiCondensed-Medium.ttf);
 }
 .daniel{
+    font-family: Barlow_Semi_Condensed;
     height: 500px;
     border-radius: 15px;
     background-color: hsl(263, 55%, 52%);
@@ -46,6 +47,7 @@ p{
     margin-left: 55px;
     margin-top: 20px;
     position:absolute;
+    font-family: ;
     font-size: 13px;
     color:   hsla(0, 23%, 89%, 0.5);
 }
@@ -56,8 +58,22 @@ p{
     font-weight: 600;
     margin-bottom: 10px;
 }
+.daniel .comment{
+    color: #ffffff;
+    font-family: Barlow_Semi_Condense;
+    font-size: 30px;
+    position: relative;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
 .experience{
     color: hsla(0, 23%, 89%, 0.7);
+}
+.daniel,.jonathan{
+    font-family: Barlow_Semi_Condensed;
+    .comment{
+        color: #ffffff;
+    }
 }
 .jonathan{
     background-color: hsl(217, 19%, 35%);
