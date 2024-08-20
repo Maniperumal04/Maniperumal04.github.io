@@ -1,0 +1,124 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+body{
+    background-color: hsl(210, 46%, 95%);
+    font-family: 'Barlow Semi Condensed';
+}
+.daniel{
+    height: 500px;
+    border-radius: 15px;
+    background-color: hsl(263, 55%, 52%);
+    padding-left: 30px;width: 100%;
+}
+.app{
+    width: 375px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+}
+.name img {
+    border-radius: 30px;
+    display:flex;
+    height: 40px;
+}
+.name{
+    display:flex;
+    color:  hsl(0, 23%, 89%);
+    padding: 10px;
+    gap: 15px;
+    margin-top: 15px;
+}
+.icon img{
+    display:flex ;
+    margin-left: 240px;
+    margin-top: 10px;
+    position:absolute;
+}
+.daniel img{
+    display: flex;
+   
+}
+p{
+    margin-left: 55px;
+    margin-top: 20px;
+    position:absolute;
+    font-size: 13px;
+    color:   hsla(0, 23%, 89%, 0.5);
+}
+.comment{
+    color: white;
+    font-size: 30px;
+    position: relative;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.experience{
+    color: hsla(0, 23%, 89%, 0.7);
+}
+.jonathan{
+    background-color: hsl(217, 19%, 35%);
+    margin: 25px;
+padding: 20px;
+width: 100%;border-radius: 15px;
+}
+.jeanette,
+.kira{
+    background-color: white; margin: 25px;
+    padding: 20px;
+    width: 100%;border-radius: 15px;
+    
+}
+.patrick{
+    background-color: black;padding: 20px;
+    width: 100%;border-radius: 15px;
+}
+.kira .name,
+.kira .name p,
+.kira .comment,
+.kira .experience,
+.jeanette .name,
+.jeanette .name p,
+.jeanette .comment,
+.jeanette .experience
+{
+    color: black;
+}
+@media (min-width:1440px){
+  
+    .app{ 
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(2,1fr);
+        display: grid;
+               
+    }
+    .daniel{
+        width:650px;
+        height: 300px;
+        grid-column: 1 /span 2;
+        grid-row: 1 ;margin: 10px;
+    }
+    .jonathan{
+        grid-column: 3 ;
+        grid-row: 1;
+        width: 300px;margin: 10px;
+    }
+    .kira{
+    grid-column: 4;
+    grid-row: 1 /span 2;
+    height: 640px;margin: 10px;}
+    .jeanette{
+        grid-column: 1 ;
+        grid-row: 2 ;
+        width: 250px;
+        padding: 20px;
+        margin: 0;margin: 10px;
+    }
+        .patrick{
+            grid-column: 2 /span 2;
+        grid-row: 2 ;
+        width: 700px;
+        margin: 10px;
+        }
+    }
