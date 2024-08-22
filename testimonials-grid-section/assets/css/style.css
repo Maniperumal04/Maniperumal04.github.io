@@ -1,3 +1,8 @@
+/* *{
+    margin: 0;
+    padding: 0;
+} */
+
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
@@ -8,14 +13,17 @@
 body{
     background-color: hsl(210, 46%, 95%);
     font-family: Barlow_Semi_Condensed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 .app{
-display:flex;
-flex-wrap:wrap;
-gap: 32px;
-padding: 0px;
-
+display:grid;
+grid-template-columns: 540px 255px 255px;
+gap: 20px;
+justify-content: center;
 }
 .name img {
     border-radius: 30px;
@@ -27,12 +35,34 @@ padding: 0px;
     padding: 10px;
     gap: 15px;
     margin-top: 15px;
+    color: #FFFFFF;
 }
 .name p{
     margin-left: 55px;
     margin-top: 20px;
     position:absolute;
     font-size: 13px;
+    opacity: 50%;
+}
+.name-one img {
+    border-radius: 30px;
+    display:flex;
+    height: 40px;
+}
+.name-one{
+    display:flex;
+    padding: 10px;
+    gap: 15px;
+    margin-top: 15px;
+    color: #48556a;
+    gap: 20px;
+}
+.name-one p{
+    margin-left: 55px;
+    margin-top: 20px;
+    position:absolute;
+    font-size: 13px;
+    opacity: 50%;
 }
 .icon img{
     width: 104px;
@@ -42,22 +72,14 @@ padding: 0px;
     position: absolute;
 
 }
-
-/* p{
-    margin-left: 55px;
-    margin-top: 20px;
-    position:absolute;
-    font-size: 13px;
-    color:   hsla(0, 23%, 89%, 0.5);
-} */
 .daniel{
     background-color:#733FC8 ;
-    width: 540px;
+  
     border-radius: 10px;
     padding: 0px;
- .name{
-    color:#FFFFFF
-}
+    display: grid;
+   
+
 }
 .card-one h6{
  font-size: 20px;
@@ -77,8 +99,8 @@ padding: 0px;
 }
 .jonathan{
     background-color:#48556A ;
-    width: 255px;
     border-radius: 10px;
+    
 }
 .card-two h6{
     font-size: 20px;
@@ -98,8 +120,11 @@ padding: 0px;
    }
 .jeanette{
    background-color:#FFFFFF;
-   width: 255px;
-   border-radius: 10px; 
+   border-radius: 10px;
+   display: grid;
+   grid-row: 1/span; 
+  
+
 }
 .card-three h6{
     font-size: 20px;
@@ -119,8 +144,12 @@ padding: 0px;
    }
 .kira{
     background-color: #FFFFFF;
-    width: 255px;
     border-radius: 10px;
+  
+}
+.kira{
+    display: grid;
+    grid-row: span 2;
 }
 .card-four h6{
     font-size: 20px;
@@ -140,8 +169,8 @@ padding: 0px;
    }
 .patrick{
  background-color:#19202D ;
- width:540px;
  border-radius: 10px;
+ width: 540px;
 }
 .card-five h6{
     font-size: 20px;
@@ -159,4 +188,33 @@ padding: 0px;
      opacity: 70%;
      padding: 0px 32px;
    }
-  
+  /* @media (min-width:60rem){
+    body{
+        height: 100vh;
+        align-items: center;
+    }
+    .app{
+        max-width: 75rem;
+        grid-template-columns: repeat(4,1fr);
+        margin: auto;
+        grid-template-areas: 
+        "daniel daniel jonathan kira"
+        "jeanette patrick patrick kira";
+    }
+    .app .daniel{
+        grid-area: daniel;
+    }
+    .app .jonathan{
+        grid-area: jonathan;
+
+    }
+    .app .kira{
+        grid-area: kira;
+    }
+    .app .jeanette{
+        grid-area: jeanette;
+    }
+    .app .patrick{
+        grid-area: patrick;
+    }
+  } */
