@@ -87,7 +87,7 @@ body{
 .icon img{
     z-index: -1;
     position: absolute;
-
+    padding-left: 340px;
 
 }
 .daniel{
