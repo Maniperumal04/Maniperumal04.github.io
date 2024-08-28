@@ -34,7 +34,7 @@ nav{
     font-size: 18px;
     font-weight: 700;
     line-height: 32.4px;
-    margin-top: ;
+
 }
 h1 h2{
     font-family:Fraunces;
@@ -91,6 +91,7 @@ h1 h2{
     width: 767px;
     height: 441px;
     margin: 0 356px 0 356px;
+    z-index: 1;
 }
 
 .test-section {
