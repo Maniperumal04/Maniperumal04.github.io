@@ -181,7 +181,8 @@ p {
     text-align: center;
 }
 .container{
- float: left;
+display: flex;
+
 }
 .container h3{
     font-family:Bai jamjuree semibold;
@@ -225,7 +226,7 @@ footer {
     width: 100%;
     height: 150px;
     background-color:#9EABB2;
-    opacity: 10.02%;
+    /* opacity: 10.02%; */
     text-align: center;
     padding: 20px 0;
     margin-top: 50px;
@@ -243,7 +244,7 @@ footer nav a {
     font-family: Bai jamjuree;
     font-size: 18px;
     font-weight: 400;
-    color:#4C545C;
+    /* color:#4C545C; */
 }
 
 footer nav a:hover {
