@@ -81,19 +81,23 @@ main {
     margin: 3vw;
     border-radius: 3vw;
   }
-  .card object {
+  .card img {
     border-radius: 3vw;
+    border-radius: 1vw;
+    width: 89vw;
+  }
+  .card img{
+    background: url(../images/Blog-Image-mob.png);
   }
 }
-@media only screen and (max-width: 1000px) {
+/* @media only screen and (max-width: 1000px) {
   .card {
     width: 90vw;
     border-radius: 1.5vw;
   }
-  .c
   .card object {
     align-self: center;
     border-radius: 1vw;
     width: 89vw;
   }
-}
+} */
