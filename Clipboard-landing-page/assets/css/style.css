@@ -164,25 +164,24 @@ p {
 .devices img{
     align-items: center;
 }
-/* .tools-title h2{
+.tools-title h2{
     font-family:Bai jamjuree semibold;
     font-size:36px;
     font-weight: 600;
     line-height: 45px;
     letter-spacing: -0.59px;
     align-items: center;
-} */
-/* .tools-title p{
+}
+.tools-title p{
     font-family: Bai jamjuree;
     font-size:18px ;
     font-weight: 400;
     line-height: 30px;
     letter-spacing: 0.14px;
     text-align: center;
-} */
+}
 .container{
 display: flex;
-
 }
 .container h3{
     font-family:Bai jamjuree semibold;
