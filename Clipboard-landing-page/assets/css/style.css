@@ -10,7 +10,7 @@
 
 body {
     font-family: 'Bai Jamjuree';
-    text-align: center;
+    /* text-align: center; */
     margin: 0;
 }
 .banner{
@@ -37,6 +37,7 @@ body {
   padding-bottom: 16px;
 }
 
+.tittle-para,
 p {
    font-family: Bai jamjuree;
    font-size: 20px;
@@ -47,9 +48,20 @@ p {
    color: #9EABB2;
    width: 730px;
    height: 60px;
-   margin:16px 355px 48px 355px;
+   margin:auto;
 }
-
+.sub-tittle-para p{
+    font-family: Bai jamjuree;
+   font-size: 20px;
+   font-weight: 400;
+   line-height: 30px;
+   letter-spacing: 0.15px;
+   text-align: center;
+   color: #9EABB2;
+   width: 730px;
+   height: 60px;
+   margin:auto;
+}
 .button {
     text-align: center;
     margin: 20px 0;
@@ -119,12 +131,11 @@ p {
     
 }
 .features{
-    width: 350px;
-    height: 98px;
+    max-width: 350px;
+    /* height: 98px; */
 }
 .features h3 {
-
-    margin:0px 0px;
+   padding-left: 110px;
     color: #4C545C;
     font-family: Bai jamjuree semibold;
     font-size: 24px;
@@ -133,24 +144,27 @@ p {
     line-height: 30px;
    
 }
-.features p{
-    margin:0px 0px;
+.features-para{
+    padding-left: 110px;
     font-family:Bai jamjuree;
     font-size: 16px;
     font-weight: 400;
     line-height: 30px;
     letter-spacing: 0.12px;
     color: #9EABB2;
-    text-align: center;
+    text-align: left;
+    max-width: 350px;
 
 }
 .devices h2{
+    margin-top: 150px;
     font-family:Bai jamjuree semibold;
     font-size: 36px;
     font-weight: 600;
     line-height: 45px;
     letter-spacing: -0.59px;
     text-align: center;
+    color:#4C545C;
 
 }
 .devices p{
@@ -163,6 +177,7 @@ p {
 }
 .devices img{
     align-items: center;
+    margin: 110px 314px;
 }
 .tools-title h2{
     font-family:Bai jamjuree semibold;
@@ -170,7 +185,9 @@ p {
     font-weight: 600;
     line-height: 45px;
     letter-spacing: -0.59px;
-    align-items: center;
+    text-align: center;
+    color:#4C545C;
+    
 }
 .tools-title p{
     font-family: Bai jamjuree;
@@ -179,9 +196,13 @@ p {
     line-height: 30px;
     letter-spacing: 0.14px;
     text-align: center;
+    margin-bottom: 72px;
 }
 .container{
 display: flex;
+justify-content:center;
+align-items: center;
+margin: 72px 0 162px 0;
 }
 .container h3{
     font-family:Bai jamjuree semibold;
@@ -193,8 +214,7 @@ display: flex;
     color: #4C545C;
 }
 .container p{
-    width: 350px;
-    height: 90px;
+   max-width: 350px;
     font-family:Bai jamjuree;
     font-size:16px;
     font-weight: 400;
@@ -203,8 +223,23 @@ display: flex;
     color: #9EABB2;
     text-align: center;
 }
-.website-logo{
-   padding:165px 150px;
+.card-one{
+   margin-right: 30px;
+}
+.card-two{
+    margin-right: 30px;
+}
+.container-img{
+   display: flex;
+   justify-content: center;
+}
+.website-logos{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.app-store-titile{
+    margin-bottom: 150px;
 }
 .app-store-titile h2{
       font-family:Bai jamjuree semibold;
@@ -213,6 +248,8 @@ display: flex;
       line-height: 45px;
       letter-spacing: -0.59px;
       padding-top: 150px;
+      text-align: center;
+      color: #4C545C;
 }
 .app-store-titile p{
     font-family: Bai jamjuree;
@@ -222,39 +259,47 @@ display: flex;
     letter-spacing: 0.14px;
 }
 footer {
+
     width: 100%;
-    height: 150px;
     background-color:#9EABB2;
-    /* opacity: 10.02%; */
-    text-align: center;
-    padding: 20px 0;
+    opacity: 10.02%; 
+    /* text-align: center; */
+    /* padding: 20px 0;
     margin-top: 50px;
-    /* display: inline; */
-}
-
-footer img {
-    width:55px;
-    height: 55px;
+    display: inline; */
+    /* padding: 44px 0 32px 165px;
     display: flex;
-    justify-content: left;
+    justify-content: space-between;
+     */
 }
-
-footer nav a {
+.footer-content{
+    padding: 44px 0 32px 165px;
+    display: flex;
+    justify-content: space-around;
+}
+.navication a{
     font-family: Bai jamjuree;
     font-size: 18px;
     font-weight: 400;
-    /* color:#4C545C; */
+    color:#4C545C;
+    display:inline;
+    margin-top: 39px 165px 39px 0 ;
+    padding-right: 60px;
+    padding-bottom: 12px;
+    padding-top: 24px;
+    max-width: 560px;
+   
 }
-
-footer nav a:hover {
+.nav-one{
+    padding-top: 36px;
+}
+footer a:hover {
     color: #26BBA4;
     text-decoration: underline;
 }
 .social-medias img{
-    width:24px ;
-    height: 24px;
-    display: inline;
-    padding-right: 10px;
+
+    padding-right: 24px;
 }
 @media only screen and (max-width: 767px) {
     .logo img {
@@ -327,7 +372,11 @@ footer nav a:hover {
         font-size: 16px;
         line-height: 28px;
     }
-
+    .container{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
     .container h3 {
         font-size: 20px;
         line-height: 28px;
@@ -341,7 +390,7 @@ footer nav a:hover {
 
     .website-logo {
         display: flex;
-        flex-direction:row;
+        flex-direction:column;
     }
 
     .app-store-title h2 {
@@ -356,8 +405,11 @@ footer nav a:hover {
     }
 
     footer {
-        height: 120px;
-        padding: 15px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
     }
 
     footer img {
