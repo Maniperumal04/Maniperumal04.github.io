@@ -39,7 +39,7 @@
   
   .hero {
     padding: 40px 0;
-    background: url('../images/bg-hero-desktop.svg');
+    background: url('../images/bg\ design\ two.png')no-repeat;
     background-color: var(--Very-Pale-Cyan);
   }
   
@@ -72,6 +72,12 @@
     font-weight: 400;
     margin-bottom: 30px;
     font-size: 1.2rem;
+  }
+  .hero-img-box{
+    padding: 0;
+    background: url('../images/white logo.svg')no-repeat;
+    width:715px;
+    height:725px;
   }
   
   /* Features */
@@ -159,7 +165,9 @@
     padding: 20px;
     margin-bottom: 30px;
   }
-  
+  .logo{
+    color: #ffffff;
+  }
   .footer-grid .footer-grid-item div {
     display: flex;
     align-items: center;
