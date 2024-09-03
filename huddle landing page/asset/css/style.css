@@ -39,7 +39,7 @@
   
   .hero {
     padding: 40px 0;
-    background: url('../images/bg\ design\ two.png')no-repeat;
+    /* background: url('../images/bg\ design\ two.png')no-repeat; */
     background-color: var(--Very-Pale-Cyan);
   }
   
@@ -75,7 +75,7 @@
   }
   .hero-img-box{
     padding: 0;
-    background: url('../images/white logo.svg')no-repeat;
+    /* background: url('../images/white logo.svg')no-repeat; */
     width:715px;
     height:725px;
   }
@@ -160,14 +160,14 @@
     margin-top: 100px;
   }
   
-  .footer .logo-box .logo {
+  /* .footer .logo-box .logo {
     background-color: #fff;
     padding: 20px;
     margin-bottom: 30px;
-  }
-  .logo{
+  } */
+  /* .logo{
     color: #ffffff;
-  }
+  } */
   .footer-grid .footer-grid-item div {
     display: flex;
     align-items: center;
@@ -254,7 +254,14 @@
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
   }
-  
+  /* .social-meadias{
+    display: flex;
+    cursor: pointer;
+  }
+  :hover{
+   
+   color: var(--pink);
+  } */
   /* Media Query */
   
   @media (max-width: 900px) {

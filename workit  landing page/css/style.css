@@ -331,7 +331,7 @@ footer > img {
     cursor: pointer;
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     header {
         margin: 32px 39px 56px 39px;
     }
@@ -363,7 +363,7 @@ footer > img {
         line-height: 60px;
         width: 573px;
         text-align: center;
-        /* letter-spacing: 1px; */
+        letter-spacing: 1px;
     }
 
     .mid-section {
@@ -461,16 +461,16 @@ footer > img {
         left: -210px;
     }
 
-    /* .right-hero-img {
+    .right-hero-img {
         content: url('/styles/images/tablet-right-pattern.svg');
         top: 215px;
-    } */
+    }
 
     .end-design {
         top: 1950px;
         right: 50px;
     }
-}
+} */
 
 /* @media (max-width: 400px) {
     header {
