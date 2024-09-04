@@ -1,0 +1,270 @@
+:root {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    --clr-light: hsl(0, 0%, 100%);
+    --clr-primary: hsl(232, 10%, 56%);
+    --clr-medium: hsl(234, 25%, 52%);
+    --clr-dark: hsl(233, 54%, 16%);
+    --clr-pink-light: hsl(341, 100%, 83%);
+    --clr-pink-dark: hsl(341, 92%, 62%);
+    --clr-gradient-pink: linear-gradient(hsl(322, 87%, 55%), hsl(13, 100%, 64%));
+    --clr-gradient-dark: linear-gradient(hsl(237, 100%, 64%), hsl(322, 87%, 55%));
+  
+    --fw-extra: 800;
+    --fw-bold: 700;
+    --fw-light: 400;
+  
+  
+  }
+  
+  /*
+    Josh's Custom CSS Reset
+    https://www.joshwcomeau.com/css/custom-css-reset/
+  */
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  
+  * {
+    margin: 0;
+  }
+  
+  body {
+  
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  img {
+    display: block;
+    max-width: 100%;
+  }
+  
+  input,
+  button,
+  textarea,
+  select {
+    font: inherit;
+  }
+  
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    overflow-wrap: break-word;
+  }
+  
+  /*end of CSS reset*/
+  .wrapper {
+    margin: 1em;
+  }
+  
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  /*buttons*/
+  .btn {
+    border: none;
+    border-radius: 25px;
+    padding: 0.9em 1.3em;
+    color: var(--clr-light);
+    font-weight: var(--fw-bold);
+    text-decoration: none;
+  }
+  
+  .navbar {
+    background-color: var(--clr-dark);
+    padding: 0.8rem 1.5rem;
+  
+  }
+  
+  .navbar:hover {
+    cursor: pointer;
+    background-color: var(--clr-medium);
+  }
+  
+  .pink {
+    background: var(--clr-gradient-pink);
+    padding: 1em 1.5em;
+    margin: 1.1rem 0;
+  }
+  
+  .pink:hover {
+    opacity: 0.6;
+  }
+  
+  .bottom {
+    background: var(--clr-gradient-dark);
+  }
+  
+  .bottom:hover {
+    box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.3);
+  }
+  
+  .hero-img {
+  
+    margin-top: 1rem;
+    background-image: url("assets/image-hero-mobile@2x.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 327px;
+    height: 301px;
+    margin: 0 auto;
+  
+  
+  }
+  
+  .header-title {
+    margin-top: 2.375rem;
+    font-size: 2.5rem;
+    font-weight: var(--fw-extra);
+    color: var(--clr-dark);
+  }
+  
+  .header-text {
+    color: var(--clr-primary);
+    font-size: 1.125rem;
+    font-weight: var(--fw-bold);
+    margin: 1rem 0;
+    line-height: 28px;
+  }
+  
+  h2 {
+    background: var(--clr-gradient-pink);
+    font-weight: var(--fw-extra);
+    padding: 1.3em;
+    color: var(--clr-light);
+    font-size: 1.5rem;
+    margin-bottom: 2em;
+    border-radius: 10px;
+  }
+  
+  .cards-wrapper {
+    display: grid;
+    gap: 2.5em;
+  
+  }
+  
+  .card {
+    background-color: var(--clr-light);
+    position: relative;
+    padding: 1.5em;
+    display: grid;
+    gap: 1em;
+    border-radius: 10px;
+  }
+  
+  .card-icon {
+    position: absolute;
+    width: 56px;
+    height: 56px;
+    top: -25px;
+    left: 20px;
+  }
+  
+  .card-title {
+    font-weight: var(--fw-extra);
+    font-size: 1.5rem;
+    margin-top: 1em;
+  }
+  
+  .card-content {
+    font-weight: var(--fw-normal);
+    font-size: 1rem;
+    color: var(--clr-primary);
+    line-height: 28px;
+  }
+  
+  .cta {
+    color: var(--clr-pink-dark);
+    font-size: 1.125rem;
+    font-weight: var(--fw-bold);
+  }
+  
+  .footer-wrapper {
+    background-color: var(--clr-dark);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2em 1em;
+    margin-top: 5rem;
+  }
+  
+  @media (min-width: 753px) {
+    body {
+      background-image: url("assets/image-hero-tablet.png");
+      background-repeat: no-repeat;
+      background-position: top -80px right -280px;
+    }
+  
+    .wrapper {
+      margin: 2.5rem;
+  
+  
+    }
+  
+    .container {
+      margin-top: 10em;
+      width: 50%;
+  
+    }
+  
+    .cards-wrapper {
+      margin: 10em 0;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  
+    .hero-img {
+      display: none;
+    }
+  
+    h2 {
+      margin-bottom: 0;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    body {
+      background-image: url(../images/profile\ logo.png);
+      background-repeat: no-repeat;
+      background-position: top -150px right -320px;
+    }
+  
+    .wrapper {
+      margin: 1.5rem 8rem;
+      padding: 1em;
+    }
+  
+    .container {
+      width: 50%;
+    }
+  
+    .cards-wrapper {
+      margin-top: 15rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 5em 1.875em;
+      place-content: center;
+  
+    }
+  
+    .card-content {
+      line-height: 28px;
+    }
+  
+    .header-title {
+      font-size: 3.5rem;
+    }
+  
+    .footer-wrapper {
+      padding: 1em 5em;
+    }
+  }

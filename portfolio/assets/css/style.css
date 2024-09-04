@@ -705,7 +705,7 @@ hr {
     }
 
     .about-image {
-        /* width: 445px; */
+        width: 445px; 
         height: 637.38px;
         image-rendering: crisp-edges;
         margin-right: 15px;

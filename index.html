@@ -1,108 +1,239 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>Maniperumal - Portfolio</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
-    
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Preview My-Portfolio" />
+    <meta name="keywords" content="HTML, tags, web development, card" />
+    <meta property="og:title" content="My-Portfolio">
+    <meta property="og:description" content="Preview My-Portfolio">
+    <link rel="icon" type="image/x-icon" href="assets/images/three-card-icon.png">
+    <title>My-Portfolio</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
 </head>
+
 <body>
-    <header>
-        <div class="header-content">
-            <!-- Add your profile picture here -->
-            <img src="./assets/images/mypic.jpg" alt="Your Profile Picture" class="profile-picture">
-            <h1>MANIPERUMAL A</h1>
-            <p>Front-end developer</p>
+    <header class="header">
+        <nav class="header-nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#interests" class="nav-link">Interests</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- Header Introduction -->
+        <div class="header-intro">
+            <p class="intro-para">HELLO!</p>
+            <h1 class="intro-title">I'm a Frontend<span class="intro-highlight"> developer</h1>
+            <div class="intro-btn">
+                <a href="#about" class="intro-btn-hire">HIRE ME</a>
+                <a href="#projects" class="intro-btn-work">MY WORKS</a>
+            </div>
         </div>
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#resume">Resume</a></li>
-        </ul>
-    </nav>
-
-    <section id="about">
-        <div class="section-content">
-            <h2>About Me</h2>
-            <p>I'm MANIPERUMAL A, a front-end developer focused on crafting user-friendly digital experiences. With 2 months of experience in web technologies, I enjoy turning ideas into intuitive designs and responsive layout</p>
+    <section class="about" id="about">
+        <!-- About Content -->
+        <div class="about-content">
+            <img src="assets/images/profile_img.png" alt="Profile-Picture" class="about-image">
+            <div class="about-details">
+                <h2 class="about-title">About Me</h2>
+                <p class="about-description">A passionate Frontend Developer with a knack for
+                     design and attention to detail.</p>
+                    <!-- <div class="about-bg-text">
+                        <img src="./assets/images/About.png" alt="about-bg-text">
+                    </div> -->
+                <ul class="about-info">
+                    <li><span>Name:</span> Maniperumal A</li>
+                    <li><span>Date of Birth:</span>April 29, 2004</li>
+                    <li><span>Location:</span>sivaganga, TamilNadu</li>
+                    <li><span>Email:</span>maniperumal727@gmail.com</li>
+                    <li><span>Phone:</span>+91 7489267676</li>
+                </ul>
+                <div class="about-bg-text">
+                    <img src="./assets/images/About.png" alt="about-bg-text">
+                </div>
+                <p class="about-projects"><span>13</span> Projects completed</p>
+                <!-- <a href="assets/document" class="about-download" download>Download CV</a> -->
+            </div>
         </div>
     </section>
 
-    <section id="education">
-        <div class="section-content">
-            <h2> Bachelor of Computer Applications</h2>
-            <p>J.J College of Arts and Science,Pudukkottai.</p>
+    <section class="resume" id="resume">
+        <h2 class="resume-title">Resume</h2>
+        <p class="resume-para">Explore my resume to discover my journey of growth in web development and project
+            management. See how my skills and experience can add value to your team!</p>
+            <div class="Resume-bg-text">
+                <img src="./assets/images/Resume.png" alt="Resume-bg-text">
+            </div>
+        <!-- Resume Content -->
+        <div class="resume-content">
+            <div class="resume-item">
+                <h3 class="resume-period">2021-2024</h3>
+                <p class="resume-institution">J.J.College Of Arts and Science,Pudukkottai.</p>
+                <p class="resume-degree">Bachelor Of Computer Application -69%(persetage)</p>
+                <p class="resume-description"></p>
+            </div>
+            <div class="resume-item">
+                <h3 class="resume-period">2021</h3>
+                <p class="resume-institution">Thiyagarajan Memorial Higher Secondary School</p>
+                <p class="resume-degree">Persentage - 77%</p>
+                <!-- <p class="resume-description">Completed Senior Secondary Schooling with a focus on broadening academic
+                    knowledge and developing essential life skills. Engaged in various extracurricular activities to
+                    foster personal growth and teamwork.</p> -->
+            </div>
+            <div class="resume-item">
+                <h3 class="resume-period">2019</h3>
+                <p class="resume-institution">Sri Sivagami Ambal High School</p>
+                <p class="resume-degree">Persentage - 85%</p>
+                <!-- <p class="resume-description">Successfully completed secondary schooling with a strong foundation in
+                    diverse subjects. Developed essential skills in critical thinking, problem-solving, and effective
+                    communication.</p> -->
+            </div>
+        </div>
+        <a href="assets/documents/Resume.pdf" class="resume-download" download>Download CV</a>
+    </section>
+
+    <section class="interests" id="interests">
+        <h2 class="interests-title">Interests</h2>
+        <p class="interests-para">Discover my interests and discover what I am passionate about</p>
+        <!-- Interests Grid -->
+        <div class="interests-grid">
+            <div class="interest">
+                <img src="assets/images/Vector.png" alt="Web-Design-Icon" class="interest-icon">
+                <h3 class="interest-title">WEB DESIGN</h3>
+                <hr>
+            </div>
+            <div class="interest">
+                <img src="assets/images/photography.png" alt="Photography-Icon" class="interest-icon">
+                <h3 class="interest-title">PHOTOGRAPHY</h3>
+                <hr>
+            </div>
+            <div class="interest">
+                <img src="assets/images/web development .png" alt="UI-Design-Icon" class="interest-icon">
+                <h3 class="interest-title">WEB DEVELOPER</h3>
+                <hr>
+            </div>
+            <div class="interest">
+                <img src="assets/images/Vector.png" alt="App-Development-Icon" class="interest-icon">
+                <h3 class="interest-title">APP DEVELOPER</h3>
+                <hr>
+            </div>
+           
         </div>
     </section>
 
-    <section id="skills">
-        <div class="section-content">
-            <h2>Skills</h2>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JAVA SCRIPT</li>
-            </ul>
+    <section class="skills" id="skills">
+        <h2 class="skills-title">My Skills</h2>
+        <p class="skills-para">Mastering the art of front-end development.</p>
+        <!-- Skills Content -->
+        <div class="skills-content">
+            <div class="skills-content-left">
+                <div class="skill">
+                    <div class="skill-bar-top">
+                        <span class="skill-name">HTML</span>
+                        <span class="skill-percentage">90%</span>
+                    </div>
+                    <div class="skill-bar-bottom">
+                        <div class="skill-level skill-level-90"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-bar-top">
+                        <span class="skill-name">CSS</span>
+                        <span class="skill-percentage">70%</span>
+                    </div>
+                    <div class="skill-bar-bottom">
+                        <div class="skill-level skill-level-70"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-bar-top">
+                        <span class="skill-name">Java Script </span>
+                        <span class="skill-percentage">10%</span>
+                    </div>
+                    <div class="skill-bar-bottom">
+                        <div class="skill-level skill-level-10"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-bar-top">
+                        <span class="skill-name">Figma</span>
+                        <span class="skill-percentage">10%</span>
+                    </div>
+                    <div class="skill-bar-bottom">
+                        <div class="skill-level skill-level-10"></div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section id="projects">
-        <div class="section-content">
-            <h2>Projects</h2>
-            <ul>
-                <li><a href="./three column preview page/three-card-column.html" target="_blank">Three-column preview card webpage</a></li>
-                <li><a href="./QR code/qr-code-component.html" target="_blank">QR-code-component</a></li>
-                <li><a href="./recipe page/recipe-page.html" target="_blank">recipe-page</a></li>
-                <li><a href="./blog preview card/blog-card.html" target="_blank">blog preview card</a></li>
-                <li><a href="./four-card-feature-section/four-card-feature-section.html" target="_blank">four-card-feature-section</a></li>
-                <li><a href="./Clipboard-landing-page/landing_page.html" target="_blank">Clipboard-landing-page</a></li>
-                <li><a href="./testimonials-grid-section/grid-section.html" target="_blank">testimonials-grid-section</a></li>
-                <li><a href="./workit  landing page/workit.html" target="_blank">workit landing page</a></li>
-                <li><a href="./fylo-landing-page/fylo-landing-page.html" target="_blank">fylo-landing-page</a></li>
-                <li><a href="./single-price-grid-component/single-price-grid.html" target="_blank">single-price-grid</a></li>
-                <li><a href="./sign-up form/form.html" target="_blank">sign-up form</a></li>
-                <li><a href="./portfolio/portfolio.html" target="_blank">portfolio</a></li>
-                <li><a href="./huddle landing page/huddle.html" target="_blank">huddle landing page</a></li>
-                <li><a href="./chat-app/chat.html" target="_blank">chat-app</a></li>
-                <!-- Add more project links here -->
-            </ul>
-        </div>
+    <section class="projects" id="projects">
+        <h2 class="projects-title">My Projects</h2>
+        <p class="projects-para">A Collection of My Work: Innovative, Dynamic, and Purpose-Driven</p>
+        <!-- Projects Grid
+        <div class="projects-grid">
+            <a href="Testimonials-Grid-Section/testimonial.html" target="_blank"><img
+                    src="./assets/images/Testimonials-Grid-Section.png" alt="Project-Testimonials"
+                    class="project-image"></a>
+            <a href="Clipboard-Landing-Page/clipboard.html" target="_blank"><img
+                    src="./assets/images/Clipboard-Landing-Page.png" alt="Project-Clipboard" class="project-image"></a>
+            <a href="Four-Card-Feature-Section/four-card.html" target="_blank"><img
+                    src="./assets/images/Four-Card-Feature-Section.png" alt="Project-FourCard"
+                    class="project-image"></a>
+            <a href="Blog-Preview-Card/blog.html" target="_blank"><img src="./assets/images/Blog-Preview-Card.png"
+                    alt="Project-Blog" class="project-image"></a>
+            <a href="Recipe-Page/recipe.html" target="_blank"><img src="./assets/images/Recipe-Page.png"
+                    alt="Project-RecipePage" class="project-image"></a>
+            <a href="QR-Code-Component/qr-card.html" target="_blank"><img src="./assets/images/QR-Code-Component.png"
+                    alt="Project-QRCode" class="project-image"></a>
+            <a href="Three-Column-Preview-Card/three-card.html" target="_blank"><img
+                    src="./assets/images/Three-Column-Preview-Card.png" alt="Project-ThreeCard"
+                    class="project-image"></a>
+        </div> -->
     </section>
 
-    <section id="resume">
-        <center>
-        <div class="section-content">
-            <h2>Resume</h2>
-            <a href="https://drive.google.com/file/d/1QZCT64lLsUpfOTr7o0H3wdyN3QaDTApk/view?usp=sharing" class="download-button">Download CV</a>
+    <footer class="footer" id="contact">
+        <h2 class="footer-title">Contact Me</h2>
+        <p class="footer-para">Let's connect and explore how we can collaborate on your next project or address your
+            inquiries.</p>
+        <!-- Contact Content -->
+        <div class="footer-content">
+            <div class="footer-item footer-item-margin">
+                <div class="footer-item-image">
+                    <img src="./assets/images/address.png" alt="Address-Logo">
+                </div>
+                <span class="footer-label">Address:</span>
+                <span class="footer-value">Sivaganga,TamilNadu</span>
+            </div>
+            <div class="footer-item footer-item-margin">
+                <div class="footer-item-image">
+                    <img src="./assets/images/mobile.png" alt="mobile-Logo">
+                </div>
+                <span class="footer-label">Contact Number:</span>
+                <span class="footer-value">+91 7489267676 </span>
+            </div>
+            <div class="footer-item footer-item-margin">
+                <div class="footer-item-image">
+                    <img src="./assets/images/mail.png" alt="mail-Logo">
+                </div>
+                <span class="footer-label">Mail Address:</span>
+                <span class="footer-value">maniperumal727@gmail.com</span>
+            </div>
+            <div class="footer-item ">
+                <div class="footer-item-image">
+                    <img src="./assets/images/github.png" alt="github-Logo">
+                </div>
+                <span class="footer-label">GitHub</span>
+                <span class="footer-value">Maniperumal04.github.io</span>
+            </div>
         </div>
-        </center>
-    </section>
-
-    <footer>
-        <p>&copy; 2024 MANIPERUMAL A. All rights reserved</p>
     </footer>
-
-    <script>
-        // Smooth scrolling to section when clicking on navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-
-                const targetId = this.getAttribute('href').substring(1);
-                const targetElement = document.getElementById(targetId);
-
-                if (targetElement) {
-                    window.scrollTo({
-                        top: targetElement.offsetTop,
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        });
-    </script>
 </body>
+
 </html>
