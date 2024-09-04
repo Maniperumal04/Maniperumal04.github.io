@@ -100,6 +100,7 @@ p {
 }
 .btn-mac-btn:hover {
     background-color: #6174FF;
+    border-radius: #FFFFFF 25.35% ;
 }
 .sub-tittle h2{
     font-family:  Bai jamjuree semibold;
@@ -261,8 +262,8 @@ margin: 72px 0 162px 0;
 footer {
 
     width: 100%;
-    background-color:#9EABB2;
-    opacity: 10.02%; 
+    /* background-color:#9EABB2; */
+    /* opacity: 10.02%;  */
     /* text-align: center; */
     /* padding: 20px 0;
     margin-top: 50px;
@@ -276,8 +277,10 @@ footer {
     padding: 44px 0 32px 165px;
     display: flex;
     justify-content: space-around;
+    background-color:#9EABB2;
+    opacity: 10.02%;
 }
-.navication a{
+.navication{
     font-family: Bai jamjuree;
     font-size: 18px;
     font-weight: 400;
