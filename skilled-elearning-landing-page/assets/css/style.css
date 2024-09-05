@@ -16,15 +16,12 @@
   
   }
   
-  /*
-    Josh's Custom CSS Reset
-    https://www.joshwcomeau.com/css/custom-css-reset/
-  */
-  *,
+
+  /* *,
   *::before,
   *::after {
     box-sizing: border-box;
-  }
+  } */
   
   * {
     margin: 0;
@@ -35,10 +32,10 @@
     -webkit-font-smoothing: antialiased;
   }
   
-  img {
+  /* img {
     display: block;
     max-width: 100%;
-  }
+  } */
   
   input,
   button,
@@ -110,7 +107,7 @@
   .hero-img {
   
     margin-top: 1rem;
-    background-image: url("assets/image-hero-mobile@2x.png");
+    background-image: url("../images/profile-mob\ img.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -118,7 +115,9 @@
     height: 301px;
     margin: 0 auto;
   
-  
+  }
+  .profile-image{
+    display: none;
   }
   
   .header-title {
@@ -199,7 +198,7 @@
   
   @media (min-width: 753px) {
     body {
-      background-image: url("assets/image-hero-tablet.png");
+      background-image: url("../images/profile-mob\ img.png");
       background-repeat: no-repeat;
       background-position: top -80px right -280px;
     }
@@ -233,7 +232,8 @@
   
   @media (min-width: 1200px) {
     body {
-      background-image: url(../images/profile\ logo.png);
+      background-image: url(../images/profile-mob\ img.png);
+      margin-top: 171px;
       background-repeat: no-repeat;
       background-position: top -150px right -320px;
     }
@@ -246,7 +246,9 @@
     .container {
       width: 50%;
     }
-  
+   .hero-img{
+    display: none;
+   }
     .cards-wrapper {
       margin-top: 15rem;
       display: grid;

@@ -250,6 +250,7 @@ a {
   z-index: 1;
 }
 .dashboard__pictures img {
+    width: 875px;
   box-shadow: 0 19px 53px -16px rgba(25, 42, 89, 0.2);
   border-radius: 32px;
   margin-top: 50px;
