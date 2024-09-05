@@ -534,6 +534,24 @@ hr {
     width: 100%;
 }
 
+.scroll-container {
+    width: 100%;
+    overflow-x: scroll; /* Enables horizontal scrolling */
+    display: flex;
+    justify-content: center;
+}
+
+.scroll-wrapper {
+    display: flex;
+    gap: 10px; /* Space between images */
+}
+
+.scroll-wrapper img {
+    width: 300px; /* Adjust based on your image sizes */
+    height: auto;
+    object-fit: cover; /* Maintains aspect ratio */
+    border-radius: 10px; /* Optional, for rounded corners */
+}
 .footer-title {
     font-family: Poppins;
     font-size: 50px;

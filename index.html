@@ -178,6 +178,8 @@
         <p class="projects-para">A Collection of My Work: Innovative, Dynamic, and Purpose-Driven</p>
         Projects Grid
         <div class="projects-grid">
+            <!-- <div class="scroll-container">
+                <div class="scroll-wrapper"> -->
             <a href="./testimonials-grid-section/grid-section.html" target="_blank"><img
                     src="./assets/images/project img/testimonials grid section.png" alt="Project-Testimonials"
                     class="project-image"></a>
@@ -195,8 +197,31 @@
             <a href="./three column preview page/three-card-column.html" target="_blank"><img
                     src="./assets/images/project img/three-card-column.png" alt="Project-ThreeCard"
                     class="project-image"></a>
+                </div>
+            </div>
         </div>
     </section>
+    <button id="scroll-left">Left</button>
+<button id="scroll-right">Right</button>
+
+<script>
+    const scrollContainer = document.querySelector('.projects-grid');
+    const scrollAmount = 200; // Adjust based on how much you want to scroll
+
+    document.getElementById('scroll-left').addEventListener('click', () => {
+        scrollContainer.scrollBy({
+            left: -scrollAmount,
+            behavior: 'smooth'
+        });
+    });
+
+    document.getElementById('scroll-right').addEventListener('click', () => {
+        scrollContainer.scrollBy({
+            left: scrollAmount,
+            behavior: 'smooth'
+        });
+    });
+</script>
 
     <footer class="footer" id="contact">
         <h2 class="footer-title">Contact Me</h2>
