@@ -35,8 +35,11 @@ h6 {
 
 p {
     text-wrap: pretty
+    max-width 350px;
 }
+.button{
 
+}
 img,
 picture {
     max-width: 100%;
@@ -525,5 +528,3 @@ address {
     color: var(--clr-black);
     background-color: var(--clr-main-color-brown)
 }
-
-/*# sourceMappingURL=main.css.map */
