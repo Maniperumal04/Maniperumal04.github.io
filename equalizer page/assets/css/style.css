@@ -38,6 +38,12 @@
     padding-top: 20px;
     padding-bottom: 80px;
   }
+  .tablet-picture{
+    display: none;
+  }
+  .desktop-image{
+    display: none;
+  }
   
   .content {
     background-image: url(../assets/bg-main-mobile.png);
@@ -45,98 +51,7 @@
     background-position: -10% 130%;
   }
   
-  
-  /* Main Content */
-  /* .mobile-picture {
-    background: var(--light-black);
-    border-radius: 12px;
-    padding-bottom: 500px;
-    z-index: -1;
-  }
-  .mobile-picture .second-ilustartion {
-    width: 280px;
-    height: 420px;
-    margin-left: 40px;
-    position: absolute;
-    z-index: 1;
-  }
-  .container-card .first-ilustration {
-    width: 208px;
-    height: 430px;
-    position: absolute;
-    z-index: 9;
-    margin-left: 80px;
-    margin-top: -100px;
-  } */
-  
-  /* .premium {
-    background: var(--orange);
-    border-radius: 12px;
-    font-family: "IBM Plex Sans", sans-serif;
-    padding: 48px 37px;
-    z-index: 999;
-    position: relative;
-    margin-top: -120px;
-  }
-  .premium h2 {
-    font-size: 2rem;
-    font-weight: 700;
-    line-height: 2.5rem;
-    color: var(--white);
-  }
-  .premium p {
-    font-size: 1.125rem;
-    font-weight: 400;
-    line-height: 1.75rem;
-    color: var(--white);
-    padding-top: 12px;
-    padding-bottom: 36px;
-  }
-  .price h1 {
-    font-size: 4.063rem;
-    font-weight: 700;
-    line-height: 3.25rem;
-    color: var(--white);
-  }
-  .price p {
-    font-size: 1.25rem;
-    font-weight: 400;
-    line-height: 2rem;
-    letter-spacing: -0.2px;
-    padding-left: 16px;
-  }
-  .price {
-    display: flex;
-  }
-  button {
-    display: block;
-    align-items: center;
-    justify-content: center;
-    border-radius: 12px;
-    font-weight: 700;
-    font-size: 1.125rem;
-    line-height: 2rem;
-    letter-spacing: -0.18px;
-    border: none;
-  }
-  .button1 {
-    background: var(--light-black);
-    color: var(--white);
-    margin-bottom: 16px;
-    padding: 15px 77px;
-  }
-  .button2 {
-    background: var(--white);
-    padding: 15px 57px 14px 59px;
-  }
-  .button1 img {
-    padding-right: 7.92px;
-    transform: translateY(10%);
-  }
-  .button2 img {
-    padding-right: 7.8px;
-    transform: translateY(15%);
-  } */
+
   /* Footer */
   .main-footer {
     font-family: "IBM Plex Sans", sans-serif;
@@ -156,24 +71,6 @@
     display: flex;
     text-decoration: none;
   }
-  /* .icons {
-    padding-right: 20px;
-  }
-  
-  .button1:hover {
-    background: var(--blue);
-    cursor: pointer;
-  }
-  .button2:hover {
-    background: var(--yellow);
-    cursor: pointer;
-  }
-  .icons:hover path {
-    fill: var(--orange);
-    cursor: pointer;
-  }
-   */
-  /* Responsive web design for Tablet */
   
   @media screen and (min-width: 768px) {
     .main-content h1 {
@@ -194,7 +91,10 @@
       padding-top: 28px;
       padding-bottom: 111px;
     }
-  
+  .mobile-image{
+    margin-bottom: 0;
+    padding: 0;
+  }
     .content {
       background-image: url(../assets/bg-pattern-1.svg),
         url(../assets/bg-main-tablet.png);
@@ -202,13 +102,12 @@
       background-position: top -30px right -40px, 110% 180%;
       background-size: 266px 400px, 983px 808px;
     }
-  
-    /* .mobile-picture {
-      margin-left: 33px;
-      margin-right: 39px;
-      padding-bottom: 640px;
-      z-index: -1;
-    } */
+    .desktop-image{
+      display: none;
+    }
+   .mobile-image{
+    display: none;
+   }
     .mobile-picture .second-ilustartion {
       margin-left: 229px;
       margin-top: -40px;
@@ -261,7 +160,16 @@
       line-height: 5.5rem;
       letter-spacing: -0.063rem;
     }
-  
+    .logo-equalizer{
+      background:url(../images/desktop/bg\ color-orange.png)no-repeat;
+      margin-left: 0px;
+      margin-top: 0px;
+    }
+    .bg-color-top{
+      display: flex;
+      justify-content: start;
+      align-items: start;
+    }
     .main-content {
       padding: 127px 260px 127px 165px;
     }
@@ -289,7 +197,16 @@
       background-position: 70% 110%;
       background-size: 1913px 2058px;
     }
-  
+    .desktop-image{
+      display: block;
+      margin: auto;
+    }
+    .tablet-picture{
+      display: none;
+    }
+    .mobile-image{
+      display: none;
+    }
     .mobile-picture {
       margin-left: 165px;
       margin-right: 165px;
