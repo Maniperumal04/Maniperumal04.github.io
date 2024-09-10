@@ -533,7 +533,11 @@ hr {
 .project-image {
     width: 100%;
 }
-
+.slider img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .scroll-container {
     width: 100%;
     overflow-x: scroll; /* Enables horizontal scrolling */
