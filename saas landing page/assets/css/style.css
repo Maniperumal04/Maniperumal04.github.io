@@ -1030,9 +1030,11 @@ body._lock {
 .slider {
   padding: clamp(1.25rem, 0.886rem + 1.82vw, 2.5rem) 0;
   position: relative;
-  display: flex;
+  
 }
 .slider__container {
+  display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
 }

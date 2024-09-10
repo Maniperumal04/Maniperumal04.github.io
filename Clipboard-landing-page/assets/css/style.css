@@ -1,742 +1,284 @@
 
-@font-face {
-    font-family: Bai jamjuree;
-    src: url(../fonts/BaiJamjuree-Medium.ttf);
-}
-@font-face {
-    font-family: Bai jamjuree semibold;
-    src: url(../fonts/BaiJamjuree-SemiBold.ttf);
-}
+:root {
+    --strong-cyan: hsl(171, 66%, 44%);
+    --light-blue: hsl(233, 100%, 69%);
+    --dark-grayish-blue: hsl(210, 10%, 33%);
+    --grayish-blue: hsl(201, 11%, 66%);
+  }
 
-body {
-    font-family: 'Bai Jamjuree';
-    /* text-align: center; */
+  * {
+    box-sizing: border-box;
     margin: 0;
-}
-.banner{
-    width: 100%;
-    height: 363px;
-    padding-top: 0%;
-    position: absolute;
-}
-.banner-mob{
+  }
+  body {
+    font-family: "Bai Jamjuree", sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  h1,
+  h3 {
+    color: var(--dark-grayish-blue);
+  }
+  h3 {
+    font-size: 30px;
+    color: var(--dark-grayish-blue);
+  }
+  p {
+    color: var(--grayish-blue);
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 15px 0 50px;
+    font-size: 20px;
+  }
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+  }
+ 
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }
+  .main-title {
+    max-width: 700px;
+    margin: 50px auto;
+  }
+  .main-title h1 {
+    font-weight: 600;
+    color: var(--dark-grayish-blue);
+    font-size: 45px;
+  }
+  .main-title p {
+    color: var(--grayish-blue);
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 20px 0 50px;
+    font-size: 20px;
+  }
+  .main-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .company{
+    display: block;
+  }
+  .company-mob-view{
     display: none;
-    width: 100%;
-    position: absolute;
-}
-.logo img {
-    margin: 128px 658px 0px 658px;
-    width: 125px;
-    height: 125px;
-
-}
-.header-title {
-  text-align: center; 
-  font-family: Bai jamjuree semibold;
-  font-size: 46px;
-  font-weight: 600;
-  color: #4C545C;
-  line-height: 57.5px;
-  letter-spacing: -0.75px;
-  padding-top: 56px;
-  padding-bottom: 16px;
-}
-
-.tittle-para,
-p {
-   font-family: Bai jamjuree;
-   font-size: 20px;
-   font-weight: 400;
-   line-height: 30px;
-   letter-spacing: 0.15px;
-   text-align: center;
-   color: #9EABB2;
-   width: 730px;
-   height: 60px;
-   margin:auto;
-}
-.sub-tittle-para p{
-    font-family: Bai jamjuree;
-   font-size: 20px;
-   font-weight: 400;
-   line-height: 30px;
-   letter-spacing: 0.15px;
-   text-align: center;
-   color: #9EABB2;
-   width: 730px;
-   height: 60px;
-   margin:auto;
-}
-.button {
-    text-align: center;
-    margin: 20px 0;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.btn-ios-btn{
-    display: inline-block;
-    padding: 10px 20px;
-    border-radius: 50px;
+  }
+  @media (max-width: 991px) {
+    .main-btn {
+      flex-direction: column;
+    }
+  }
+  .main-btn a {
     text-decoration: none;
-    color: #ffffff;
-    background-color: #26BBA4;
-    font-family: Bai jamjuree semibold ;
-    font-size: 18px;
     font-weight: 600;
-}
-
-.btn-mac-btn {
-    display: inline-block;
-    padding: 10px 20px;
-    border-radius: 50px;
-    text-decoration: none;
-    color: #ffffff;
-    background-color:#6174FF;
-    font-family:  Bai jamjuree semibold;
-    font-size: 18px;
-    font-weight: 600;
-   
-}
-.btn-ios-btn:hover {
-    background-color: #26BBA4;
-    border-radius: #FFFFFF 25.35% ;
-}
-.btn-mac-btn:hover {
-    background-color: #6174FF;
-    border-radius: #FFFFFF 25.35% ;
-}
-.sub-tittle h2{
-    font-family:  Bai jamjuree semibold;
-    font-size:36px ;
-    font-weight: 600;
-    line-height: 45px;
-    letter-spacing: 0.59px;
-    color:#4C545C ;
-    text-align: center;
-    padding-top: 150px;
-
-}
-.sub-tittle p{
-    font-family: Bai jamjuree;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 30px;
-    letter-spacing: 0.14px;
-    text-align: center;
-    color: #9EABB2;
-    padding-bottom: 80px;
-
-}
-.desktop-img {
-    display: flex;
-    justify-content: left;
-    
-}
-/* .features{
-    max-width: 350px;
-    height: 98px;
-} */
-.features h3 {
-   padding-left: 110px;
-    color: #4C545C;
-    font-family: Bai jamjuree semibold;
-    font-size: 24px;
-    font-weight: 600;
-    letter-spacing: -0.39px;
-    line-height: 30px;
-   
-}
-.features-para{
-    padding-left: 110px;
-    font-family:Bai jamjuree;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 30px;
-    letter-spacing: 0.12px;
-    color: #9EABB2;
-    text-align: left;
-    max-width: 350px;
-
-}
-.devices h2{
-    margin-top: 150px;
-    font-family:Bai jamjuree semibold;
-    font-size: 36px;
-    font-weight: 600;
-    line-height: 45px;
-    letter-spacing: -0.59px;
-    text-align: center;
-    color:#4C545C;
-
-}
-.devices p{
-    font-family:Bai jamjuree ;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 30px;
-    letter-spacing: 0.14px;
-    text-align: center;
-}
-.devices img{
-    align-items: center;
-    margin: 110px 314px;
-}
-.tools-title h2{
-    font-family:Bai jamjuree semibold;
-    font-size:36px;
-    font-weight: 600;
-    line-height: 45px;
-    letter-spacing: -0.59px;
-    text-align: center;
-    color:#4C545C;
-    
-}
-.tools-title p{
-    font-family: Bai jamjuree;
-    font-size:18px ;
-    font-weight: 400;
-    line-height: 30px;
-    letter-spacing: 0.14px;
-    text-align: center;
-    margin-bottom: 72px;
-}
-.container{
-display: flex;
-justify-content:center;
-align-items: center;
-margin: 72px 0 162px 0;
-}
-.container h3{
-    font-family:Bai jamjuree semibold;
-    font-size:24px;
-    font-weight: 600;
-    line-height: 30px;
-    letter-spacing: -0.39px;
-    text-align: center;
-    color: #4C545C;
-}
-.container p{
-   max-width: 350px;
-    font-family:Bai jamjuree;
-    font-size:16px;
-    font-weight: 400;
-    line-height: 30px;
-    letter-spacing: 0.12px;
-    color: #9EABB2;
-    text-align: center;
-}
-.card-one{
-   margin-right: 30px;
-}
-.card-two{
-    margin-right: 30px;
-}
-.container-img{
-   display: flex;
-   justify-content: center;
-}
-.website-logos{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-}
-.app-store-titile{
-    margin-bottom: 150px;
-}
-.app-store-titile h2{
-      font-family:Bai jamjuree semibold;
-      font-size: 36px;
-      font-weight: 600;
-      line-height: 45px;
-      letter-spacing: -0.59px;
-      padding-top: 150px;
-      text-align: center;
-      color: #4C545C;
-}
-.app-store-titile p{
-    font-family: Bai jamjuree;
-    font-size:18px;
-    font-weight: 400;
-    line-height: 30px;
-    letter-spacing: 0.14px;
-}
-footer {
-
+    font-size: 20px;
     width: 100%;
-    /* background-color:#9EABB2; */
-    /* opacity: 10.02%;  */
-    /* text-align: center; */
-    /* padding: 20px 0;
-    margin-top: 50px;
-    display: inline; */
-    /* padding: 44px 0 32px 165px;
+    margin: 0 10px;
+    padding: 15px;
+    border-radius: 25px;
+    color: white;
+    transition: 0.3s;
+    margin: 10px;
+  }
+  .main-btn a:nth-child(1) {
+    background-color: var(--strong-cyan);
+    box-shadow: 0px 1px 5px 0px var(--strong-cyan);
+  }
+  .main-btn a:nth-child(1):hover {
+    background-color: hsl(171, 44%, 51%);
+  }
+  .main-btn a:nth-child(2) {
+    background-color: var(--light-blue);
+    box-shadow: 0px 1px 5px 0px var(--light-blue);
+  }
+  .main-btn a:nth-child(2):hover {
+    background-color: hsl(233, 95%, 69%);
+  }
+ 
+  .landing:nth-child(1) {
+    background-image: url(../images/Bitmap\ 2.png);
+    background-size: cover;
+    height: 100vh;
+  }
+  @media (max-width: 991px) {
+    .landing:nth-child(1) {
+      background-image: url(../images/banner-mob.png);
+    }
+    .company{
+      display:none;
+    }
+    .company-mob-view{
+      display: block;
+    }
+  }
+  .landing {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .landing .logo {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  /* End Landing */
+  
+  /* Start Snippet */
+  .snippet {
+    width: 100%;
+  }
+  .snippet .info {
+    margin: 80px auto;
     display: flex;
     justify-content: space-between;
-     */
-}
-.footer-content{
-    padding: 44px 0 32px 165px;
-    display: flex;
-    justify-content: space-around;
-    background-color:#9EABB2;
-    opacity: 10.02%;
-}
-.navication{
-    font-family: Bai jamjuree;
-    font-size: 18px;
-    font-weight: 400;
-    color:#4C545C;
-    display:inline;
-    margin-top: 39px 165px 39px 0 ;
-    padding-right: 60px;
-    padding-bottom: 12px;
-    padding-top: 24px;
-    max-width: 560px;
-   
-}
-.nav-one{
-    padding-top: 36px;
-}
-footer a:hover {
-    color: #26BBA4;
-    text-decoration: underline;
-}
-.social-medias img{
-
-    padding-right: 24px;
-}
-/* @media only screen and (max-width: 600px)
-{
-    .body{
-        margin: 0;
-    }
-    .banner{
-        width: 100%;
-        height: 363px;
-        padding-top: 0%;
-        position: absolute;
-        display: none;
-    }
-    .banner-mob{
-        width: 100%;
-        position: absolute;
-    }
-    .header-title {
-        margin: auto;
-        max-width: 311px;
-      
-}
-.header-title {
-    text-align: center; 
-    font-family: Bai jamjuree semibold;
-    font-size: 46px;
-    font-weight: 600;
-    color: #4C545C;
-    line-height: 57.5px;
-    letter-spacing: -0.75px;
-    padding-top: 56px;
-    padding-bottom: 16px;
+    align-items: center;
   }
-  
-  .tittle-para,
-  p {
-     font-family: Bai jamjuree;
-     font-size: 20px;
-     font-weight: 400;
-     line-height: 30px;
-     letter-spacing: 0.15px;
-     text-align: center;
-     color: #9EABB2;
-    max-width: 311px;
-     height: 60px;
-     margin:auto;
-  }
-  .sub-tittle-para p{
-      font-family: Bai jamjuree;
-     font-size: 20px;
-     font-weight: 400;
-     line-height: 30px;
-     letter-spacing: 0.15px;
-     text-align: center;
-     color: #9EABB2;
-     max-width: 311px;
-     height: 60px;
-     margin:auto;
-  }
-  .button {
-      text-align: center;
-      margin: 20px 0;
-      display: flex;
+  @media (max-width: 991px) {
+    .snippet .info {
       flex-direction: column;
-      justify-content: center;
-      gap: 20px;
-      margin: 0px 32px 0 32px;
-      max-width: 311px;
-  }
-  
-  .btn-ios-btn{
-      display: inline-block;
-      padding: 10px 20px;
-      border-radius: 50px;
-      text-decoration: none;
-      color: #ffffff;
-      background-color: #26BBA4;
-      font-family: Bai jamjuree semibold ;
-      font-size: 18px;
-      font-weight: 600;
-      max-width: 311px;
-  }
-  
-  .btn-mac-btn {
-      display: inline-block;
-      padding: 10px 20px;
-      border-radius: 50px;
-      text-decoration: none;
-      color: #ffffff;
-      background-color:#6174FF;
-      font-family:  Bai jamjuree semibold;
-      font-size: 18px;
-      font-weight: 600;
-     
-  }
-  .btn-ios-btn:hover {
-      background-color: #26BBA4;
-      border-radius: #FFFFFF 25.35% ;
-  }
-  .btn-mac-btn:hover {
-      background-color: #6174FF;
-      border-radius: #FFFFFF 25.35% ;
-  }
-  .sub-tittle h2{
-      font-family:  Bai jamjuree semibold;
-      font-size:36px ;
-      font-weight: 600;
-      line-height: 45px;
-      letter-spacing: 0.59px;
-      color:#4C545C ;
-      text-align: center;
-      padding-top: 150px;
-  
-  }
-  .sub-tittle p{
-      font-family: Bai jamjuree;
-      font-size: 18px;
-      font-weight: 400;
-      line-height: 30px;
-      letter-spacing: 0.14px;
-      text-align: center;
-      color: #9EABB2;
-      padding-bottom: 80px;
-  
-  }
-  .desktop-img {
-      width:312px;
-      height: 238px;
-      display: flex;
-      justify-content:center;
-      align-items: center;
-      
-  }
-  .features{
-      max-width: 350px;
-      height: 98px;
-  }
-  .features h3 {
-     padding-left: 110px;
-      color: #4C545C;
-      font-family: Bai jamjuree semibold;
-      font-size: 24px;
-      font-weight: 600;
-      letter-spacing: -0.39px;
-      line-height: 30px;
-     
-  }
-  .features-para{
-      padding-left: 110px;
-      font-family:Bai jamjuree;
-      font-size: 16px;
-      font-weight: 400;
-      line-height: 30px;
-      letter-spacing: 0.12px;
-      color: #9EABB2;
-      text-align: left;
-      max-width: 350px;
-  
-  }
-  .devices h2{
-      margin-top: 150px;
-      font-family:Bai jamjuree semibold;
-      font-size: 36px;
-      font-weight: 600;
-      line-height: 45px;
-      letter-spacing: -0.59px;
-      text-align: center;
-      color:#4C545C;
-  
-  }
-  .devices p{
-      font-family:Bai jamjuree ;
-      font-weight: 400;
-      font-size: 18px;
-      line-height: 30px;
-      letter-spacing: 0.14px;
-      text-align: center;
-  }
-  .devices img{
-      align-items: center;
-      margin: 110px 314px;
-  }
-  .tools-title h2{
-      font-family:Bai jamjuree semibold;
-      font-size:36px;
-      font-weight: 600;
-      line-height: 45px;
-      letter-spacing: -0.59px;
-      text-align: center;
-      color:#4C545C;
-      
-  }
-  .tools-title p{
-      font-family: Bai jamjuree;
-      font-size:18px ;
-      font-weight: 400;
-      line-height: 30px;
-      letter-spacing: 0.14px;
-      text-align: center;
-      margin-bottom: 72px;
-  }
-  .container{
-  display: flex;
-  justify-content:center;
-  align-items: center;
-  flex-direction: column;
-  margin: 72px 0 162px 0;
-  }
-  .container h3{
-      font-family:Bai jamjuree semibold;
-      font-size:24px;
-      font-weight: 600;
-      line-height: 30px;
-      letter-spacing: -0.39px;
-      text-align: center;
-      color: #4C545C;
-  }
-  .container p{
-     max-width: 350px;
-      font-family:Bai jamjuree;
-      font-size:16px;
-      font-weight: 400;
-      line-height: 30px;
-      letter-spacing: 0.12px;
-      color: #9EABB2;
-      text-align: center;
-  }
-  .card-one{
-     margin-right: 30px;
-  }
-  .card-two{
-      margin-right: 30px;
-  }
-  .container-img{
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     flex-direction: column;
-  }
-  .website-logos{
-      display:flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-  }
-  .app-store-titile{
-      margin-bottom: 150px;
-  }
-  .app-store-titile h2{
-    max-width: 311px;
-        font-family:Bai jamjuree semibold;
-        font-size: 36px;
-        font-weight: 600;
-        line-height: 45px;
-        letter-spacing: -0.59px;
-        padding-top: 150px;
-        text-align: center;
-        color: #4C545C;
-  }
-  .app-store-titile p{
-      font-family: Bai jamjuree;
-      font-size:18px;
-      font-weight: 400;
-      line-height: 30px;
-      letter-spacing: 0.14px;
-      max-width: 311px;
-  }
-  footer { */
-  
-      width: 100%;
-      /* background-color:#9EABB2; */
-      /* opacity: 10.02%;  */
-      /* text-align: center; */
-      /* padding: 20px 0;
-      margin-top: 50px;
-      display: inline; */
-      /* padding: 44px 0 32px 165px;
-      display: flex;
-      justify-content: space-between;
-       */
-  }
-  .footer-content{
-      padding: 44px 0 32px 165px;
-      display: flex;
-      justify-content: space-around;
-      background-color:#9EABB2;
-      opacity: 10.02%;
-  }
-  .navication{
-      font-family: Bai jamjuree;
-      font-size: 18px;
-      font-weight: 400;
-      color:#4C545C;
-      display:inline;
-      margin-top: 39px 165px 39px 0 ;
-      padding-right: 60px;
-      padding-bottom: 12px;
-      padding-top: 24px;
-      max-width: 560px;
-     
-  }
-  .nav-one{
-      padding-top: 36px;
-  }
-  footer a:hover {
-      color: #26BBA4;
-      text-decoration: underline;
-  }
-  .social-medias img{
-  
-      padding-right: 24px;
-  }
-}
-/* @media only screen and (max-width: 767px) {
-    .logo img {
-        margin: 80px auto 0 auto;
-        width: 100px;
-        height: 100px;
     }
-
-    .header-title {
-        font-size: 36px;
-        line-height: 45px;
-        padding-top: 40px;
-        padding-bottom: 12px;
+    h3 {
+      font-size: 28px;
+      color: var(--dark-grayish-blue);
     }
-
     p {
-        width: 90%;
-        margin: 16px auto;
-        font-size: 18px;
-        line-height: 28px;
+      color: var(--grayish-blue);
+      font-weight: 400;
+      line-height: 1.5;
+      margin: 15px 0 50px;
+      font-size: 16px;
     }
-
-    .button {
-        flex-direction: column;
+  }
+  .snippet .info .image {
+    width: 130%;
+  }
+  .snippet .info .image img {
+    width: 110%;
+    transform: translateX(-10%);
+  }
+  @media (max-width: 991px) {
+    .snippet .info .image {
+      width: 100%;
+      padding: 0 15px;
+      margin: 30px;
     }
-
-    .btn-ios-btn,
-    .btn-mac-btn {
-        padding: 10px 30px;
-        font-size: 16px;
+    .snippet .info .image img {
+      width: 100%;
+      transform: translateX(0%);
     }
-
-    .sub-title h2 {
-        font-size: 28px;
-        line-height: 36px;
-        padding-top: 120px;
+  }
+  .snippet .info .content {
+    width: 100%;
+    text-align: left;
+    padding: 0 10%;
+  }
+  @media (max-width: 991px) {
+    .snippet .info .content .text {
+      text-align: center;
+      margin: auto;
     }
-
-    .sub-title p {
-        font-size: 16px;
-        line-height: 28px;
-        padding-bottom: 60px;
+  }
+  .snippet .info .content .text {
+    max-width: 400px;
+  }
+  /* End Snippet */
+  
+  /* Start Clipbord */
+  .clipbord .image img {
+    width: 100%;
+  }
+  /* End Clipbord */
+  
+  /* Start Workflow */
+  .workflow .content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    margin: 60px auto;
+  }
+  .workflow .content .box img {
+    margin: 40px;
+  }
+  .workflow ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    margin: 40px auto;
+  }
+  .workflow ul li {
+    margin: 40px auto;
+  }
+  /* End Workflow */
+  
+  /* Start Footer */
+  .footer {
+    margin-top: 50px;
+    padding: 50px;
+    background-color: #eee;
+    width: 100%;
+  }
+  .footer .container {
+    display: flex;
+    align-items: center;
+  }
+  @media (max-width: 991px) {
+    .footer .container {
+      flex-direction: column;
+      text-align: center;
     }
-
-    .desktop-img {
-        width: 100%;
-        height: auto;
+  }
+  .footer .container ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    margin: 40px;
+  }
+  @media (max-width: 991px) {
+    .footer .container ul {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
     }
-
-    .features {
-        width: 100%;
-    }
-
-    .features h3 {
-        font-size: 20px;
-        line-height: 28px;
-    }
-
-    .features p {
-        font-size: 14px;
-        line-height: 24px;
-    }
-
-    .devices h2 {
-        font-size: 28px;
-        line-height: 36px;
-    }
-
-    .devices p {
-        font-size: 16px;
-        line-height: 28px;
-    }
-    .container{
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-    }
-    .container h3 {
-        font-size: 20px;
-        line-height: 28px;
-    }
-    .container p {
-        width: 90%;
-        font-size: 14px;
-        line-height: 24px;
-    }
-
-    .website-logo {
-        display: flex;
-        flex-direction:column;
-    }
-
-    .app-store-title h2 {
-        font-size: 28px;
-        line-height: 36px;
-        padding-top: 120px;
-    }
-
-    .app-store-title p {
-        font-size: 16px;
-        line-height: 28px;
-    }
-
-    footer {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        width: 100%;
-    }
-
-    footer img {
-        width: 45px;
-        height: 45px;
-    }
-
-    footer nav a {
-        font-size: 16px;
-    }
-}
-
- */
+  }
+  .footer .container ul li {
+    margin: 20px 40px;
+  }
+  .footer .container ul li a {
+    text-decoration: none;
+    color: var(--dark-grayish-blue);
+    font-weight: 400;
+    font-size: 25px;
+  }
+  .footer .container .social {
+    display: flex;
+  }
+  .footer .container .social img {
+    margin: 10px;
+  }
+  /* End Footer */

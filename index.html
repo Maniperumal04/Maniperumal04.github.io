@@ -11,6 +11,19 @@
     <link rel="icon" type="image/x-icon" href="assets/images/three-card-icon.png">
     <title>My-Portfolio</title>
     <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <style>
+        .slider {
+          width: 80%;
+          margin: 20px auto;
+        }
+    
+        .slider img {
+          width: 100%;
+          border-radius: 10px;
+        }
+      </style>  
 </head>
 
 <body>
@@ -178,50 +191,37 @@
         <p class="projects-para">A Collection of My Work: Innovative, Dynamic, and Purpose-Driven</p>
         Projects Grid
         <div class="projects-grid">
-            <!-- <div class="scroll-container">
-                <div class="scroll-wrapper"> -->
-            <a href="./testimonials-grid-section/grid-section.html" target="_blank"><img
-                    src="./assets/images/project img/testimonials grid section.png" alt="Project-Testimonials"
-                    class="project-image"></a>
-            <a href="./Clipboard-landing-page/landing_page.html" target="_blank"><img
-                    src="./assets/images/project img/clipbord landing page.png" alt="Project-Clipboard" class="project-image"></a>
-            <a href="./four-card-feature-section/four-card-feature-section.html" target="_blank"><img
-                    src="./assets/images/project img/four card future section.png" alt="Project-FourCard"
-                    class="project-image"></a>
-            <a href="./blog preview card/blog-card.html" target="_blank"><img src="./assets/images/project img/blog card.png"
-                    alt="Project-Blog" class="project-image"></a>
-            <a href="./recipe page/recipe-page.html" target="_blank"><img src="./assets/images/project img/recipe page.png"
-                    alt="Project-RecipePage" class="project-image"></a>
-            <a href="./QR code/qr-code-component.html" target="_blank"><img src="./assets/images/project img/QR code component.png"
-                    alt="Project-QRCode" class="project-image"></a>
-            <a href="./three column preview page/three-card-column.html" target="_blank"><img
-                    src="./assets/images/project img/three-card-column.png" alt="Project-ThreeCard"
-                    class="project-image"></a>
-                </div>
-            </div>
+<div class="slider">
+    <div>
+        <a href="./single-price-grid-component/single-price-grid.html" target="_blank"><img src="./assets/images/project img/single price grid.png" alt="single-price-grid"></a>
+    </div>
+    <div>
+        <a href="./fylo-landing-page/fylo-landing-page.html" target="_blank"><img src="./assets/images/project img/fylolanding page two column.png" alt="fylo-landing-page"></a>
+    </div>
+    <div> <a href="./testimonials-grid-section/grid-section.html" target="_blank"><img
+        src="./assets/images/project img/testimonials grid section.png" alt="Project-Testimonials"
+        class="project-image"></a>
         </div>
+    <div>
+        <a href="./Clipboard-landing-page/landing_page.html" target="_blank"><img
+            src="./assets/images/project img/clipbord landing page.png" alt="Project-Clipboard" class="project-image"></a></div>
+    <div><a href="./four-card-feature-section/four-card-feature-section.html" target="_blank"><img
+        src="./assets/images/project img/four card future section.png" alt="Project-FourCard"
+        class="project-image"></a></div>
+    <div>  <a href="./blog preview card/blog-card.html" target="_blank"><img src="./assets/images/project img/blog card.png"
+        alt="Project-Blog" class="project-image"></a></div>
+        <div><a href="./recipe page/recipe-page.html" target="_blank"><img src="./assets/images/project img/recipe page.png"
+            alt="Project-RecipePage" class="project-image"></a></div>
+            <div> <a href="./QR code/qr-code-component.html" target="_blank"><img src="./assets/images/project img/QR code component.png"
+                alt="Project-QRCode" class="project-image"></a></div>
+                <div> <a href="./three column preview page/three-card-column.html" target="_blank"><img
+                    src="./assets/images/project img/three-card-column.png" alt="Project-ThreeCard"
+                    class="project-image"></a></div>
+  </div>
+                </div>
     </section>
-    <button id="scroll-left">Left</button>
-<button id="scroll-right">Right</button>
 
-<script>
-    const scrollContainer = document.querySelector('.projects-grid');
-    const scrollAmount = 200; // Adjust based on how much you want to scroll
 
-    document.getElementById('scroll-left').addEventListener('click', () => {
-        scrollContainer.scrollBy({
-            left: -scrollAmount,
-            behavior: 'smooth'
-        });
-    });
-
-    document.getElementById('scroll-right').addEventListener('click', () => {
-        scrollContainer.scrollBy({
-            left: scrollAmount,
-            behavior: 'smooth'
-        });
-    });
-</script>
 
     <footer class="footer" id="contact">
         <h2 class="footer-title">Contact Me</h2>
@@ -259,6 +259,22 @@
             </div>
         </div>
     </footer>
+    <!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!-- Slick Slider JS -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('.slider').slick({
+      autoplay: true,
+      dots: true,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 3,
+      slidesToScroll: 1
+    });
+  });
+</script>
 </body>
 
 </html>
