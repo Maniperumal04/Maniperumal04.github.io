@@ -79,6 +79,9 @@
     width:715px;
     height:725px;
   }
+  .hero-img-mob{
+    display: none;
+  }
   
   /* Features */
   
@@ -254,14 +257,14 @@
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
   }
-  /* .social-meadias{
+  .social-meadias{
     display: flex;
     cursor: pointer;
   }
   :hover{
    
    color: var(--pink);
-  } */
+  }
   /* Media Query */
   
   @media (max-width: 900px) {
@@ -281,7 +284,12 @@
       margin: 0 auto;
       margin-top: 50px;
     }
-  
+   .hero-img{
+    display: none;
+   }
+   .hero-img-mob{
+    display: block;
+   }
     .text-xxl {
       font-size: 2rem;
     }
