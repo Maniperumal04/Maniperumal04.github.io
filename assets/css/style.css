@@ -537,6 +537,7 @@ hr {
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 .scroll-container {
     width: 100%;
@@ -563,6 +564,10 @@ hr {
     height: 473px;
     
 
+}
+.project-img{
+    padding-left: 20px;
+    padding-right: 20px;
 }
 .footer-title {
     font-family: Poppins;
@@ -659,7 +664,7 @@ hr {
         color: var(--yellow);
     } */
 
-     Intro Section
+     /* Intro Section
     .header-intro {
         width: 607px;
         margin: 123.44px auto 100.6px auto;
@@ -1126,7 +1131,7 @@ hr {
         gap: 30px;
     } */
 
-    .project-image {
+    /* .project-image {
         width: 100%;
     }
 
@@ -1202,4 +1207,4 @@ hr {
         color: var(--content-color);
         margin-bottom: 133.21px;
     }
-}  */
+}  */ */ */
