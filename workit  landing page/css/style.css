@@ -15,12 +15,13 @@ body {
 
 .header {
     background: var(--sub-color);
-    height: 90vh;
+    height: 771px;
     clip-path: ellipse(95% 85% at 50% 0%);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
 .container {
@@ -122,9 +123,10 @@ body {
 }
 
 .hero-container {
-    position: relative;
+    position: absolute;
     width: 100%;
-    margin: 88px auto 0 auto;
+    /* margin: 88px auto 0 auto; */
+    top: 491px;
 }
 
 .feature-section {
@@ -132,8 +134,9 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    background-color: var(--bg-color);
-    clip-path: ellipse(95% 85% at 50% 0%);
+    margin-top: 102px;
+    /* background-color: var(--bg-color);
+    clip-path: ellipse(95% 85% at 50% 0%); */
 }
 
 .feature-block {
