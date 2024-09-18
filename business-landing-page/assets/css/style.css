@@ -68,10 +68,10 @@ body {
 }
 
 .wrap {
-  min-width: 320px;
-  max-width: 1180px;
+  /* min-width: 320px;
+  max-width: 1180px; */
   box-sizing: border-box;
-  margin: 0 auto;
+  margin: 50px auto;
 }
 
 p, a, button {
@@ -93,8 +93,8 @@ a {
 }
 
 .intro-analytics {
-  /* position: relative;
-  padding-top: 50px; */
+  position: relative;
+  padding-top: 50px;
 }
 .intro-analytics::after {
   content: "";
@@ -121,7 +121,11 @@ a {
   background: #ef2a82;
   clip-path: polygon(0 0, 100% 0, 100% 75%, 0% 100%);
 }
-
+.dashboard__pictures img{
+  max-width: 873px;
+  position: relative;
+  padding-top: 50px;
+}
 .header {
   display: flex;
   align-items: center;
@@ -203,7 +207,8 @@ a {
   left: -280px;
   width: 720px;
   height: 720px;
-  background: url("../../assets/icons/Subtract.svg") no-repeat;
+  /* background: url("../../assets/icons/Subtract.svg") no-repeat; */
+  display: none;
   z-index: -1;
 }
 .dashboard__info .dashboard__title::before {
@@ -211,9 +216,9 @@ a {
   position: absolute;
   top: -180px;
   left: 98%;
-  width: 1000px;
-  height: 1000px;
-  background: url("../../assets/icons/logo-light-gray-2.svg") no-repeat;
+  width: 873px;
+  /* background: url("../../assets/images/chart-one.png") no-repeat; */
+  display: none;
   z-index: -1;
 }
 .dashboard__info .dashboard__text {
@@ -256,7 +261,7 @@ a {
   position: absolute;
   top: -80px;
   left: 80px;
-  background: url("../../assets/pictures/dashboard-big.png") no-repeat;
+  /* background: url("../../assets/pictures/dashboard-big.png") no-repeat; */
   width: 805px;
   height: 550px;
   box-shadow: 0 18px 50px -15px rgba(25, 42, 89, 0.2);
@@ -301,7 +306,7 @@ a {
     top: 0;
     left: 0;
     visibility: visible;
-    background: url("../../assets/icons/menu-icon.svg") no-repeat;
+    /* background: url("../../assets/icons/menu-icon.svg") no-repeat; */
   }
   .header__menu--side {
     position: absolute;

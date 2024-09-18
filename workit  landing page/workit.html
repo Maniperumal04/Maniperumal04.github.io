@@ -2,80 +2,111 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta property="og:title" content="Welcome to My workit landing page">
-    <meta property="og:description"
-        content="Discover carefully selected articles that will inspire, inform, and entertain. Explore a world of curated content tailored just for you.">
-    <meta property="og:image" content="./images/phone.png">
-    <link rel="icon" href="./images/workit -favicon.png">
-
-    <link rel="stylesheet" href="./css/style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Preview a Workit Landing Page" />
+    <meta name="keywords" content="HTML, tags, web development, card" />
+    <meta property="og:title" content="Workit Landing Page">
+    <meta property="og:description" content="Preview a Workit Landing Page">
+    <link rel="icon" type="image/x-icon" href="assets/images/landing-page-icon.png">
     <title>Workit Landing Page</title>
+    <link rel="stylesheet" href="./css/style.css" />
 </head>
 
 <body>
+    <header class="header">
+        <div class="container">
+            <div class="header-top">
+                <img src="./images/workit.png" alt="Logo">
+                <a href="javascript:void(0)" class="header-link">Apply for access</a>
+            </div>
+            <div class="header-content">
+                <h1 class="header-title">Data <span>tailored</span> to your needs.</h1>
+                <a href="javascript:void(0)" class="button button-learn-more">Learn more</a>
+                <div class="left-loop">
+                    <img src="./images/spring big.png" alt="Left-Loop">
+                </div>
+                <div class="right-loop">
+                    <img src="./images/spring small.png" alt="Right-Loop">
+                </div>
+            </div>
+        </div>
+    </header>
+
     <main>
-        <img class="left-hero-img" src="./images/spring big.png" alt="style-design-1-img">
-        <img class="right-hero-img" src="./images/spring small.png" alt="style-design-2-img">
-        <img class="end-design" src="./images/spring .png" alt="style-design-3-img">
-        <div class="hero-section">
-            <header>
-                <img src="./images/workit.png" alt="logo-light">
-                <p>Apply for access</p>
-            </header>
-            <div class="main-blurb">
-                <div class="middle-hero-container">
-                    <h1>Data <em>tailored</em> to your needs.</h1>
-                    <button>Learn more</button>
-                    <img id="phone-img" src="./images/phone.png" alt="phone-img">
-                </div>
+        <section class="hero-section">
+            <div class="hero-container">
+                <img src="./images/phone.png" alt="Phone-Illustration" class="phone-illustration">
             </div>
-        </div>
-        <div class="mid-section">
-            <div class="mid-section-flex">
-                <p class="number">1</p>
-                <div class="paragraph-spiegl-box" id="far-left">
+        </section>
+        <section class="feature-section">
+            <div class="feature-block margin-block">
+                <div class="feature-block-logo blacklist-logo">
+                    <img src="./images/num one img.png" alt="Create-Blacklists">
+                </div>
+                <div class="feature-block-content blacklist-content">
                     <h3>Actionable insights</h3>
-                    <p class="paragraph-spiegl">Optimize your products, improve customer satisfaction and stay ahead of
-                        the competition with our product data analytics.</p>
+                    <p>Optimize your products, improve customer satisfaction and stay ahead of the competition with our
+                        product data analytics.
+                    </p>
                 </div>
             </div>
-            <div class="mid-section-flex">
-                <p class="number">2</p>
-                <div class="paragraph-spiegl-box" id="mid">
+            <div class="feature-block">
+                <div class="feature-block-logo text-logo">
+                    <img src="./images/num two img.png" alt="Plain-Text-Snippets">
+                </div>
+                <div class="feature-block-content text-content">
                     <h3>Data-driven decisions</h3>
-                    <p class="paragraph-spiegl">Make data-driven decisions with our product data analytics. Our
-                        AI-generated reports help you unlock insights hidden in your product data.</p>
+                    <p>Make data-driven decisions with our product data analytics. Our AI-generated reports help you
+                        unlock insights hidden in your product data.</p>
                 </div>
             </div>
-            <div class="mid-section-flex">
-                <p class="number">3</p>
-                <div class="paragraph-spiegl-box" id="far-right">
+            <div class="feature-block">
+                <div class="feature-block-logo sneak-logo">
+                    <img src="./images/num three img.png" alt="Sneak-Preview">
+                </div>
+                <div class="feature-block-content sneak-content">
                     <h3>Always affordable</h3>
-                    <p class="paragraph-spiegl">Always affordable pricing that scales with your business. Get
-                        top-quality product data analytics services without hidden costs or unexpected fees.</p>
+                    <p>Always affordable pricing that scales with your business. Get top-quality product data analytics
+                        services without hidden costs or unexpected fees.</p>
                 </div>
             </div>
-        </div>
-        <div class="end-section">
-            <img id="founder-img" src="./images/profile pic.png" alt="founders-img">
-            <div class="end-spiegl">
-                <h2>Be the first to test</h2>
-                <p>Hi, I'm Louis Graham, the founder of the company. Book a demo call with me to become a beta tester
-                    for our app and kickstart your company. Apply for access below and I’ll be in touch to schedule a
-                    call.</p>
-                <button>Apply for access</button>
+        </section>
+        <section class="cta-section">
+            <div class="cta-content">
+                <div class="cta-image">
+                    <img src="./images/profile pic.png" alt="Louis-Graham" class="founder-image">
+                </div>
+                <div class="cta-text">
+                    <h2 class="cta-title">Be the first to test</h2>
+                    <p class="cta-description">
+                        Hi, I'm Louis Graham, the founder of the company. Book a demo call with me to become a beta
+                        tester for our app and kickstart your company. Apply for access below and I'll be in touch to
+                        schedule a call.
+                    </p>
+                    <div class="footer-link">
+                        <a href="javascript:void(0)">Apply for access</a>
+                        <div class="lower-loop">
+                            <img src="./images/spring small.png" alt="Lower-Loop">
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-        <footer>
-            <img src="./images/workit (1).png" alt="logo-dark-version-img">
-            <div class="social-links">
-                <img style="margin-right: 26px;" src="./images/facebook.png" alt="facebook-img">
-                <img style="margin-right: 26px;" src="./images/twitter.png" alt="twitter-img">
-                <img src="./images/instagram.png" alt="instagram-img">
-            </div>
-        </footer>
+        </section>
     </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <img src="./images/workit (1).png" alt="Logo">
+            <div class="footer-social">
+                <a class="fb-logo" href="javascript:void(0)"><img src="./images/facebook.png" alt="Facebook"></a>
+                <a class="twitter-logo" href="javascript:void(0)"><img src="./images/twitter.png"
+                        alt="Twitter"></a>
+                <a class="insta-logo" href="javascript:void(0)"><img src="./images/instagram.png"
+                        alt="Instagram"></a>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
