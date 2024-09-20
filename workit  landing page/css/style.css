@@ -54,8 +54,8 @@ body {
 }
 
 .header-content {
-    max-width: 1120px;
-    height: auto;
+    /* max-width: 1120px; */
+    height: 608px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -120,6 +120,7 @@ body {
 .hero-section {
     background-color: var(--bg-color);
     text-align: center;
+    margin-top: 88px;
 }
 
 .hero-container {
@@ -425,9 +426,9 @@ body {
         margin-top: 32px;
     }
 
-    .header-content {
+    /* .header-content {
         width: 100%;
-    }
+    } */
 
     .left-loop {
         display: none;
@@ -459,7 +460,8 @@ body {
     }
 
     .phone-illustration {
-        width: 100%;
+        width: 320px;
+        height: 184px;
     }
 
     .feature-section {
